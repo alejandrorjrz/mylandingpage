@@ -21,7 +21,7 @@ function App() {
           <img className="w-80" src={laptop} alt="pc" />
         </div>
         <div>
-          <h1 className="font-montserrat text-8xl">AlejandroRojas</h1>
+          <h1 className="font-montserrat text-8xl">Alejandro Rojas</h1>
           <div>
             <p className="max-w-2xl font-montserrat text-2xl">
               Diseño y desarrollo soluciones web innovadoras para impulsar tu presencia en línea.
