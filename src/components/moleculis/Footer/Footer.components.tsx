@@ -7,11 +7,12 @@ export const Footer: React.FC = ({}) => {
     <footer className="h-20 bg-slate-800 flex justify-between text-white">
       <div className="flex items-center">
         <h1 className="ml-10 font-uncial font-bold text-base text-red-800">AlexRojas</h1>
-        <p className="mx-2 text-xs">diseño y desarrollo web</p>
+        <p className="mx-2 text-xs font-bold">diseño y desarrollo web</p>
       </div>
       <div className="h-50 flex items-center">
-        <img className="w-8 h-8 mx-2" src={github} alt="github icon" />
-        <img className="w-8 h-8 mr-10" src={instagram} alt="instagram icon" />
+        <a title="github" href="https://github.com/alejandrorjrz"><img className="w-8 h-8 mx-2" src={github} alt="github icon" /></a>
+        <a title="instagram" href="https://www.instagram.com/"><img className="w-8 h-8 mr-10" src={instagram} alt="instagram icon" /></a> 
+        
       </div>
     </footer>
   );

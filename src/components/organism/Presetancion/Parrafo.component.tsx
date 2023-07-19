@@ -9,11 +9,11 @@ function Paragraph () {
   
        typewriter
         
-       .typeString("Apasionado del desarrollador web y la creación de experiencias digitales cautivadoras.")
+       .typeString("Apasionado del desarrollo web y la creación de experiencias digitales cautivadoras.")
          
        .pauseFor(1000)
        .deleteAll()
-       .typeString("Mi enfoque se centra en combinar diseño y funcionalidad para ofrecer sitios web únicos y atractivos.")
+       .typeString("Enfoco mi trabajo en combinar diseño y funcionalidad para ofrecer sitios web únicos y atractivos.")
        .start();
        }}
        />

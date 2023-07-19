@@ -163,7 +163,7 @@ export interface Location {
 const WeatherCard = () => {
   //estado del tiempo
   /* const [weather, setWeather] = useState<Weather | null>(null); */
-  const [location] = useState<string>("Cáceres");
+  const [location] = useState<string>("Caceres");
 
   const navigate = useNavigate();
 

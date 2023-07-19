@@ -166,7 +166,7 @@ export interface Location {
 const ElTiempo = () => {
   //estado del tiempo
   /* const [weather, setWeather] = useState<Weather | null>(null); */
-  const [location, setLocation] = useState<string>("Cáceres");
+  const [location, setLocation] = useState<string>("Caceres");
 
   const { data, isFetching, fetchData } = useFetch<Weather>({
     url: `http://api.weatherapi.com/v1/forecast.json?key=70e7fb61f7ee4dbdb9182329231307&q=${location}&days=5&aqi=no&alerts=no`,
