@@ -3,7 +3,18 @@ import Button from "../../atoms/Button/Button.components";
 
 //las propiedades de interface se pasan como parámetro a la función
 export const Header: React.FC = ({}) => {
+
+  //ir a un área específica de la página
   const navigate = useNavigate();
+
+  const handleArea = (id:string) =>{
+    const areaDestino = document.getElementById(id);
+
+    if(areaDestino){
+      areaDestino.scrollIntoView({behavior: 'smooth'})
+    }
+
+  }
 
   return (
     <header>
@@ -11,8 +22,8 @@ export const Header: React.FC = ({}) => {
         <div className="font-uncial text-2xl">
           <Button text="AlexRojas" onClick={() => navigate("/")} />
         </div>
-        <Button text="SOBRE MI" />
-        <Button text="PROYECTOS" />
+        <Button text="SOBRE MI" onClick={()=>handleArea('sobreMi')} />
+        <Button text="PROYECTOS" onClick={()=>handleArea('proyectos')}/>
         <Button text="CONTACTO" onClick={() => navigate("/contact")}/>
         <div className="">
           <Button type="button" text="Acceso" onClick={() => navigate("/login")} />
