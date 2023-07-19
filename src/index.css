@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Sans&family=Montserrat&family=Raleway&family=Rubik&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&family=Tektur&family=Wallpoet&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
