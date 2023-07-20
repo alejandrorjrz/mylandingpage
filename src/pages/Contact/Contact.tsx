@@ -5,11 +5,13 @@ import Header from "../../components/moleculis/Header/Header.component";
 
 function Contact() {
   return (
-    <div className="h-screen w-screen bg-slate-700">
+    <div className="h-screen w-screen justify-between flex flex-col bg-slate-700">
       <Header />
       <div className="flex justify-center justify-items-center text-white font-montserrat">
-        <form className="my-20 w-2/3 min-h-full bg-slate-600 rounded-lg">
-          <h1 className="w-3/4 mx-auto mt-10 text-center text-2xl">Gracias por contactar conmigo. Puede enviarme un mesaje a través del siguiente formulario:</h1>
+        <form className="w-2/3 min-h-full bg-slate-400 rounded-lg">
+          <h1 className="w-3/4 mx-auto mt-10 text-center text-2xl">
+            Gracias por contactar conmigo. Puede enviarme un mesaje a través del siguiente formulario:
+          </h1>
           <div className="mt-10 grid grid-rows-1 grid-cols-2">
             <div className="px-10 text-xl grid justify-items-stretch">
               <Input labelText="Nombre: " type="text" />
@@ -24,9 +26,7 @@ function Contact() {
           </div>
         </form>
       </div>
-      <div className="py-4">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

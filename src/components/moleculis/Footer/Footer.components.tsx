@@ -4,7 +4,7 @@ import instagram from "../../../assets/images/instagramw.png";
 //las propiedades de interface se pasan como parámetro a la función
 export const Footer: React.FC = ({}) => {
   return (
-    <footer className="h-20 bg-slate-800 flex justify-between text-white">
+    <footer className="sx:min-w-full h-20 bg-slate-800 flex justify-between text-white ">
       <div className="flex items-center">
         <h1 className="ml-10 font-uncial font-bold text-base text-red-800">AlexRojas</h1>
         <p className="mx-2 text-xs font-bold">diseño y desarrollo web</p>

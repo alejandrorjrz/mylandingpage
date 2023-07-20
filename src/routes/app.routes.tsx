@@ -1,4 +1,4 @@
-import {Navigate, Route, Routes} from "react-router-dom"
+import { Route, Routes} from "react-router-dom"
 import App from '../App'
 import Error404 from '../pages/Error/Error404'
 import Login from "../pages/Login/Login"
@@ -13,7 +13,6 @@ export const AppRoutes = () =>{
     return(
         <Routes>
             <Route path="/"element={<App />} />
-            <Route path="/mylandingpage" element={<Navigate to={'/'} />} />
             <Route path="/contact"element={<Contact />}/> 
             <Route path="/login"element={<Login/>}/>            
             <Route path="/registro"element={<RegisterForm />}/>

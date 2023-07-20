@@ -169,11 +169,11 @@ const ElTiempo = () => {
   const [location, setLocation] = useState<string>("Caceres");
 
   const { data, isFetching, fetchData } = useFetch<Weather>({
-    url: `http://api.weatherapi.com/v1/forecast.json?key=70e7fb61f7ee4dbdb9182329231307&q=${location}&days=5&aqi=no&alerts=no`,
+    url: `https://api.weatherapi.com/v1/forecast.json?key=70e7fb61f7ee4dbdb9182329231307&q=${location}&days=5&aqi=no&alerts=no`,
   });
 
   return (
-    <div className="h-full w-screen bg-slate-700">
+    <div className="h-full w-screen flex flex-col  bg-slate-700">
       <Header/>
       <div className="flex justify-center">
         <div className="mt-20 w-1/2 px-10 py-10 min-w-min bg-gradient-to-r from-sky-300 to-blue-400 rounded-2xl">
