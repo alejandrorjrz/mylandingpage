@@ -17,7 +17,10 @@ export const Header: React.FC  = ({}) => {
 
     if (areaDestino) {
       areaDestino.scrollIntoView({ behavior: "smooth" });
+      setHidden(!hidden);
     }
+
+    
   };
 
   
@@ -31,7 +34,7 @@ export const Header: React.FC  = ({}) => {
   return (
     <header>
       <nav className="bg-gradient-to-r from-red-800 h-20 font-joseline text-white flex flex-row justify-between items-center">
-        <div className="font-uncial text-2xl md:text-3xl md:hidden">
+        <div className="font-uncial text-2xl md:text-3xl md:hidden ">
           <Button text="AlexRojas" onClick={() => navigate("/")} />
         </div>
         <ul
@@ -39,18 +42,18 @@ export const Header: React.FC  = ({}) => {
             hidden ? "block" : "hidden"
           } w-screen py-5 absolute top-20 z-10 text-2xl bg-slate-800/90 font-rubik text-center rounded md:top-0 md:bg-inherit md:flex md:justify-center md:text-base md:items-center`}
         >
-          <li>
-            <div id="logo" className="font-uncial text-2xl md:text-3xl hidden md:block">
+          <li >
+            <div id="logo" className="font-uncial text-2xl md:text-3xl hidden md:block hover:scale-110">
               <Button text="AlexRojas" onClick={() => navigate("/")} />
             </div>
           </li>
-          <li>
+          <li className="hover:scale-110">
             <Button text="SOBRE MI" onClick={() => handleArea("sobreMi")} />
           </li>
-          <li>
+          <li className="hover:scale-110">
             <Button text="PROYECTOS" onClick={() => handleArea("proyectos")} />
           </li>
-          <li>
+          <li className="hover:scale-110">
             <Button text="CONTACTO" onClick={() => navigate("/contact")} />
           </li>
           <li className="mt-5 md:mt-0">

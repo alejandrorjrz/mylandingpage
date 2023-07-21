@@ -173,29 +173,29 @@ const ElTiempo = () => {
   });
 
   return (
-    <div className="h-full w-screen flex flex-col  bg-slate-700">
+    <div className="h-full w-screen flex flex-col  bg-slate-700 font-raleway ">
       <Header/>
       <div className="flex justify-center">
-        <div className="mt-20 w-1/2 px-10 py-10 min-w-min bg-gradient-to-r from-sky-300 to-blue-400 rounded-2xl">
+        <div className="my-2 mx-2 px-10 py-10 min-w-min bg-gradient-to-r from-sky-400 to-blue-500 rounded">
           {isFetching ? (
             <h1 className="text-xl text-slate-600 font-bold">CARGANDO...</h1>
           ) : (
             <>
               <div>
-                <h1 className="text-4xl text-slate-600 font-montserrat">El Tiempo</h1>
+                <h1 className="text-xl text-slate-600 ">El Tiempo</h1>
               </div>
-              <div className="grid gap-2 grid-cols-3">
-                <div>
-                  <p className="text-3xl font-black text-slate-600">{data?.location.name}</p>
+              <div className="grid gap-2 grid-cols-2 text-slate-800">
+                <div className="">
+                  <p className="text-3xl font-bold">{data?.location.name}</p>
                   <p>{data?.location.country}</p>
-                  <p className="mt-5 font-semibold text-2xl">{data?.location.localtime}</p>
+                  <p className="mt-1">{data?.location.localtime}</p>
                   {/* <p>{data?.current.}</p> */}
                 </div>
-                <div>
-                  <img className="w-36" src={data?.current.condition.icon} alt={data?.current.condition.text} />
+                <div className="flex items-start justify-center">
+                  <img className="w-28" src={data?.current.condition.icon} alt={data?.current.condition.text} />
                 </div>
-                <div className="justify-self-end">
-                  <p className="text-6xl text-center font-black text-slate-600">{data?.current.temp_c}º</p>
+                <div className="flex col-span-2 justify-center">
+                  <p className="text-6xl font-black text-slate-800">{data?.current.temp_c}º</p>
                 </div>
               </div>
               <h1 className="mt-5 font-bold text-slate-600">Predicción</h1>
@@ -204,7 +204,7 @@ const ElTiempo = () => {
                   <div>
                     {data?.forecast.forecastday.map((item, index) => (
                       <div key={index}>
-                        <div className="m-1 px-2 font-semibold text-white bg-slate-500 rounded flex flex-row justify-between items-center gap-4">
+                        <div className="my-1 px-2 py-2 text-white bg-slate-500 rounded flex flex-row justify-between items-center gap-4">
                           <p>{item.date}</p>
                           <p>Max: {item.day.maxtemp_c}º</p>
                           <p>Med: {item.day.avgtemp_c}º</p>
@@ -219,7 +219,7 @@ const ElTiempo = () => {
                 </div>
               </div>
 
-              <div className="mt-10 font-semibold text-slate-600 flex justify-center">
+              <div className="mt-10 font-semibold text-slate-800 flex justify-center">
                 <Input
                   labelText="Ciudad: "
                   type="text"
