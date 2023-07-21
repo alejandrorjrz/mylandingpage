@@ -67,27 +67,22 @@ function Login() {
   return (
     <div className="h-screen w-screen bg-gradient-to-r from-slate-800 to-red-900">
       <Header />
-      <div className="flex justify-center">
-        <div className="mt-28">
-          <div className="w-96 px-5 py-5 bg-gray-600 rounded-lg">
-            <div className="flex justify-center">
-              <img
-                className="w-20"
-                src={usuario}
-              />
-            </div>
-            <div className="grid grid-rows-2">
-              <Input type="email" name="email" value={formData.email} placeholder="Email ID" onChange={onChange} />
-              <br />
-              <Input type="password" name="password" value={formData.password} placeholder="Password" onChange={onChange} />
-            </div>
-            <div className="mt-5 text-center">
-              <Button type="submit" text="Acceso" onClick={onSubmit}/>
-            </div>
-            <div className="h-10 mt-10 text-center">
-                <p>¿No dispone de una cuenta?</p>
-              <Button type="button" text="Registrese aqui" onClick={() => navigate("/registro")} />
-            </div>
+      <div className="w-full flex justify-center">
+        <div className="mt-28 mx-2 w-full max-w-lg px-4 py-5 bg-gray-600 rounded-lg">
+          <div className="flex justify-center">
+            <img className="w-20" src={usuario}/>
+          </div>
+          <div className="grid grid-rows-2">
+            <Input type="email" name="email" value={formData.email} placeholder="Email ID" onChange={onChange} />
+            <br />
+            <Input type="password" name="password" value={formData.password} placeholder="Password" onChange={onChange} />
+          </div>
+          <div className="mt-5 text-center">
+            <Button type="submit" text="Acceso" onClick={onSubmit}/>
+          </div>
+          <div className="h-10 mt-10 text-center">
+              <p>¿No dispone de una cuenta?</p>
+            <Button type="button" text="Regístrese aqui" onClick={() => navigate("/registro")} />
           </div>
         </div>
       </div>

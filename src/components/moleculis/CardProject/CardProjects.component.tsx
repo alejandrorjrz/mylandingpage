@@ -17,14 +17,14 @@ export const CardProject: React.FC<CardProjectProps> = ({
   linkProject
 }) => {
   return (
-    <div className="my-10 mx-auto py-10 w-full flex justify-center items-center bg-slate-900/20 rounded-2xl">
-      <div className="w-64 h-40 rounded-lg">
+    <div className="my-10 mx-auto py-10 px-4 w-full flex justify-between items-center bg-slate-900/20 rounded-2xl  md:px-24">
+      <div className="w-40 h-40 rounded-lg md:w-64 md:h-64">
         <img className="w-full h-full object-cover rounded-2xl" src={img} />
       </div>
-      <div className="mx-10 text-white">
-        <h1 className="text-right font-raleway text-2xl">{title}</h1>
-        <p className="text-right font-raleway text-xs ">{text}</p>
-        <div className="mt-4 flex justify-end text-sm">
+      <div className="text-white">
+        <h1 className="text-right font-raleway text-2xl md:text-4xl">{title}</h1>
+        <p className="text-right font-raleway text-xs md:text-lg">{text}</p>
+        <div className="mt-4 flex justify-end text-sm md:mt-10 md:text-lg">
           <BtnLink text={linkProject} onClick={onClick} />
         </div>
       </div>

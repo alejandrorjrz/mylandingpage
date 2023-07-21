@@ -70,7 +70,7 @@ const WeatherCard = () => {
           <h1 className="text-xl text-slate-600 font-bold">CARGANDO...</h1>
         ) : (
           <>
-            <div className="mt-10 grid gap-2 grid-cols-3  text-slate-200 text-xs items-center">
+            <div className=" px-2 grid grid-cols-3  text-slate-200 text-xs items-center">
               <div>
                 <p className="font-black">{data?.location.name}</p>
                 <p>{data?.location.country}</p>
