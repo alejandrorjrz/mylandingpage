@@ -10,7 +10,7 @@ export const Header: React.FC  = ({}) => {
   const navigate = useNavigate();
 
   // ************************************
-  const handleArea = (id: string) => {
+  const handleArea = async (id: string) => {
     navigate("/");
 
     const areaDestino = document.getElementById(id);
@@ -18,9 +18,7 @@ export const Header: React.FC  = ({}) => {
     if (areaDestino) {
       areaDestino.scrollIntoView({ behavior: "smooth" });
       setHidden(!hidden);
-    }
-
-    
+    }    
   };
 
   
@@ -33,14 +31,14 @@ export const Header: React.FC  = ({}) => {
 
   return (
     <header>
-      <nav className="bg-gradient-to-r from-red-800 h-20 font-joseline text-white flex flex-row justify-between items-center">
+      <nav className="bg-red-900 h-20 font-joseline text-white flex flex-row justify-between items-center">
         <div className="font-uncial text-2xl md:text-3xl md:hidden ">
           <Button text="AlexRojas" onClick={() => navigate("/")} />
         </div>
         <ul
           className={`${
             hidden ? "block" : "hidden"
-          } w-screen py-5 absolute top-20 z-10 text-2xl bg-slate-800/90 font-rubik text-center rounded md:top-0 md:bg-inherit md:flex md:justify-center md:text-base md:items-center`}
+          }  w-screen py-5 absolute top-20 z-10 text-2xl bg-slate-800/95 font-montserrat text-center rounded md:top-0 md:bg-inherit md:flex md:justify-center md:text-base md:items-center`}
         >
           <li >
             <div id="logo" className="font-uncial text-2xl md:text-3xl hidden md:block hover:scale-110">

@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
   
 function Paragraph () {
   return (
-    <div>
+    <div className="my-0">
       <Typewriter
   
        onInit={(typewriter)=> {

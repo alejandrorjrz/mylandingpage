@@ -9,7 +9,7 @@ interface BtnLinkProps{
 export const BtnLink: React.FC<BtnLinkProps> = ({text, type="button", onClick}) => {
 
   return (
-    <button className="border-none text-red-600 underline hover:bg-red-900/25" type={type} onClick={onClick}>{text}</button>
+    <button className="border-none font-bold hover:bg-red-900/25" type={type} onClick={onClick}>{text}</button>
   )
 }
 

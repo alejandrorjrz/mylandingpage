@@ -65,7 +65,7 @@ function Login() {
     }
 
   return (
-    <div className="h-screen w-screen bg-slate-700">
+    <div className="w-screen h-screen bg-slate-700">
       <Header />
       <div className="w-full flex justify-center">
         <div className="mt-28 mx-2 py-5 w-full max-w-lg px-4 bg-slate-500 rounded-lg">

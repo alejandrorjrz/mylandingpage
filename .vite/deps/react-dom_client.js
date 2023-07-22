@@ -21528,7 +21528,7 @@ var require_react_dom_development = __commonJS({
         });
         {
           if (!foundDevTools && canUseDOM && window.top === window.self) {
-            if (navigator.userAgent.indexOf("Chrome") > -1 && navigator.userAgent.indexOf("Edge") === -1 || navigator.userAgent.indexOf("Firefox") > -1) {
+            if (navigator.userAgentData.indexOf("Chrome") > -1 && navigator.userAgentData.indexOf("Edge") === -1 || navigator.userAgentData.indexOf("Firefox") > -1) {
               var protocol = window.location.protocol;
               if (/^(https?|file):$/.test(protocol)) {
                 console.info("%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools" + (protocol === "file:" ? "\nYou might need to use a local HTTP server (instead of file://): https://reactjs.org/link/react-devtools-faq" : ""), "font-weight:bold");
