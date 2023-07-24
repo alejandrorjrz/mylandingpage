@@ -32,7 +32,7 @@ function App() {
           <div className="mx-auto mt-5 md:mt-0 md:absolute md:top-28">
             <WeatherCard />
           </div>
-          <div className="my-10 w-80 md:mt-20 md:float-left ">
+          <div className="my-10 w-56 lg:w-80 md:mt-20 md:float-left ">
             <img
               className="w-full h-full object-cover opacity-50 md:mt-20"
               src={desarrollo}
