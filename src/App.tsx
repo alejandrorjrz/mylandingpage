@@ -1,5 +1,11 @@
 import Header from "./components/moleculis/Header/Header.component";
 import desarrollo from "./assets/images/desarrolloWeb.png";
+import html from "./assets/images/html-5.png";
+import css from "./assets/images/css.png";
+import javascript from "./assets/images/JS.png";
+import react from "./assets/images/react.png";
+import java from "./assets/images/java.png";
+
 import CardProject from "./components/layout/CardProject/CardProjects.component";
 import bloques from "./assets/images/bloques.jpg";
 
@@ -48,6 +54,13 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="my-5 w-10 flex flex-row gap-5 justify-center opacity-60 md:w-14 md:min-w-min md:flex-col md:justify-end">
+          <img src={html} alt="html5" />
+          <img src={css} alt="css3" />
+          <img src={javascript} alt="JavaScript" />
+          <img src={react} alt="React" />
+          <img src={java} alt="java" />
+        </div>
       </div>
 
       <div id="sobreMi" className="mx-6 md:w-8/12 md:m-auto md:mt-10">
@@ -69,7 +82,9 @@ function App() {
       </div>
 
       <div id="proyectos" className="mx-6 md:w-8/12 md:m-auto">
-        <h1 className="font-montserrat text-4xl text-white  text-right">PROYECTOS</h1>
+        <h1 className="font-montserrat text-4xl text-white  text-right">
+          PROYECTOS
+        </h1>
         <div>
           <CardProject
             img={bloques}
