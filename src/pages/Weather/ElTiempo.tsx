@@ -173,7 +173,7 @@ const ElTiempo = () => {
   });
 
   return (
-    <div className="h-full w-screen flex flex-col  bg-slate-700 font-raleway ">
+    <div className="h-full w-screen flex flex-col bg-slate-700 font-raleway md:h-full md:min-h-screen">
       <Header/>
       <div className="flex justify-center">
         <div className="my-2 mx-2 px-10 py-10 min-w-min bg-gradient-to-r from-sky-400 to-blue-500 rounded">

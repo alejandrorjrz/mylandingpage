@@ -50,11 +50,11 @@ function RegisterForm() {
   };
 
   return (
-    <div className="h-screen w-screen bg-slate-700 ">
+    <div className="h-screen w-screen md:h-full md:min-h-screen bg-slate-700 ">
       <Header />
       <div className="flex justify-center">
-        <form className="w-full max-w-lg mt-28 mx-2 px-4 py-5 bg-slate-500 rounded-lg">
-          <h1 className="text-center text-xl font-bold text-white">Formulario de Registro</h1>
+        <form className="w-full max-w-lg my-20 mx-2 px-4 py-5 bg-slate-500 rounded-lg">
+          <h1 className="font-montserrat text-center text-xl text-white">Formulario de Registro</h1>
           <div className="mt-10 grid-rows-5 text-white">
             <div className="grid justify-items-stretch">
               <Input labelText="Nombre: " name="name" value={formData.name} onChange={onChange} />

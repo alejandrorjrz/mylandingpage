@@ -32,7 +32,7 @@ function Login() {
 
     const { setToken, setUser } = useContext(AppContext);
    
-    const {formData, onChange} = useForm<LoginDataI>(initialLogInForm);
+    const { formData, onChange } = useForm<LoginDataI>(initialLogInForm);
 
     const navigate = useNavigate();
 
@@ -64,11 +64,27 @@ function Login() {
         }        
     }
 
+
+    //************************************** */
+   //desconexión
+
+    // const logOut = () => {
+
+    //   setToken('');
+
+    //   localStorage.removeItem('user');
+
+    //   navigate('/')
+ 
+    // }
+
+    //************************************** */
+
   return (
-    <div className="w-screen h-screen bg-slate-700">
+    <div className="w-screen h-screen md:h-full md:min-h-screen bg-slate-700">
       <Header />
       <div className="w-full flex justify-center">
-        <div className="mt-28 mx-2 py-5 w-full max-w-lg px-4 bg-slate-500 rounded-lg">
+        <div className="my-20 mx-2 py-5 w-full max-w-lg px-4 bg-slate-500 rounded-lg">
           <div className="flex justify-center">
             <img className="w-20" src={usuario}/>
           </div>

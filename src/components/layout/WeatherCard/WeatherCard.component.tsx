@@ -65,7 +65,7 @@ const WeatherCard = () => {
 
   return (
     <div onClick={() => navigate("/eltiempo")} className="cursor-pointer">
-      <div className="w-52 bg-slate-800/50 rounded-2xl">
+      <div className="w-52 bg-slate-500/30 rounded-2xl">
         {isFetching ? (
           <h1 className="text-xl text-slate-600 font-bold">CARGANDO...</h1>
         ) : (

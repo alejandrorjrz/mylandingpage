@@ -14,27 +14,28 @@ function App() {
   return (
     <div
       id="AppPrincipal"
-      className="h-full w-screen bg-gradient-to-r font-raleway from-slate-800 to-red-900 dark:text-red-600"
+      className="h-full w-screen bg-gradient-to-r font-raleway from-slate-800 to-red-900"
     >
       {/* <div className="text-white absolute top-3 right-2 opacity-80 z-50">
         <SwitchLabels />
       </div> */}
+
       <Header />
       <div className="w-screen h-screen flex flex-col items-center md:h-96 md:flex-row md:w-8/12 md:m-auto">
         <div className="flex flex-col">
           <div className="mx-auto mt-5 md:mt-0 md:absolute md:top-28">
             <WeatherCard />
           </div>
-          <div className="mt-10 md:w-80 md:mt-20 md:float-left ">
+          <div className="my-10 w-80 md:mt-20 md:float-left ">
             <img
-              className="w-full h-full object-cover opacity-50 "
+              className="w-full h-full object-cover opacity-50 md:mt-20"
               src={desarrollo}
               alt="desarrollador web"
             />
           </div>
         </div>
 
-        <div className="mx-6 mt-14 md:w-full md:h-64">
+        <div className="mx-6 mt-5 md:w-full md:h-64">
           <h1 className="font-uncial text-right text-5xl text-white">
             Alejandro Rojas
           </h1>
@@ -50,7 +51,7 @@ function App() {
       </div>
 
       <div id="sobreMi" className="mx-6 md:w-8/12 md:m-auto md:mt-10">
-        <h1 className="  text-4xl text-white">Sobre mi</h1>
+        <h1 className="font-montserrat text-4xl text-white">SOBRE MI</h1>
         <div className="my-10  text-white text-lg text-justify ">
           <p>
             Despúes muchos años dedicados al desarrollo de proyectos de
@@ -68,9 +69,7 @@ function App() {
       </div>
 
       <div id="proyectos" className="mx-6 md:w-8/12 md:m-auto">
-        <h1 className="  text-4xl text-white  text-right">
-          Proyectos
-        </h1>
+        <h1 className="font-montserrat text-4xl text-white  text-right">PROYECTOS</h1>
         <div>
           <CardProject
             img={bloques}

@@ -17,7 +17,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
   linkProject
 }) => {
   return (
-    <div className="my-10 mx-auto py-10 px-4 w-full flex justify-between items-center bg-slate-900/20 rounded-2xl  md:px-10">
+    <div className="my-10 mx-auto py-10 px-4 w-full flex justify-between items-center bg-slate-500/30 rounded-2xl  md:px-10">
       <div className="w-40 h-40 rounded-lg md:w-64 md:h-64">
         <img className="w-full h-full object-cover rounded-2xl" src={img} />
       </div>
