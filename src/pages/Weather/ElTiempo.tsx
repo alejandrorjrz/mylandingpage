@@ -173,9 +173,9 @@ const ElTiempo = () => {
   });
 
   return (
-    <div className="h-full w-screen flex flex-col bg-slate-700 font-raleway md:h-full md:min-h-screen">
+    <div className="flex flex-col h-screen md:h-full md:min-h-screen bg-slate-700">
       <Header/>
-      <div className="flex justify-center">
+      <div className="flex flex-grow mx-5 items-center justify-center">
         <div className="my-2 mx-2 px-10 py-10 min-w-min bg-gradient-to-r from-sky-400 to-blue-500 rounded">
           {isFetching ? (
             <h1 className="text-xl text-slate-600 font-bold">CARGANDO...</h1>

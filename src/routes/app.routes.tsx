@@ -12,14 +12,15 @@ import Contact from "../pages/Contact/Contact"
 export const AppRoutes = () =>{
     return(
         <Routes>
-            <Route path="/"element={<App />} />
-            <Route path="/contact"element={<Contact />}/> 
-            <Route path="/login"element={<Login/>}/>            
+            <Route path="/"element={<App />}/>
+            <Route path="/contact"element={<Contact />}/>
+            <Route path="/login"element={<Login/>}/> 
             <Route path="/registro"element={<RegisterForm />}/>
+            <Route path="/eltiempo"element={<ElTiempo />}/>
             <Route element={<ProtectedRoutes/>}>
-                <Route path="/eltiempo"element={<ElTiempo />}/>
-            </Route>            
-            <Route path="/educalco"element={<Educalco />}/>  
+                {/* Aqui se incluyen las rutas con acceso por usuarios registrados */}
+            </Route>
+            <Route path="/educalco"element={<Educalco />}/>
             <Route path="*"element={<Error404 />}/>
         </Routes>
     )
